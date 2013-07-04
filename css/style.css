@@ -1,0 +1,54 @@
+@import url('sidebar.css');
+@import url('content_area.css');
+@import url('docs.css');
+
+/* GLOBAL CSS */
+
+* {
+	-webkit-transition:  0.2s ease;
+	-o-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+}
+
+html {
+	height: 100%;
+	overflow: hidden;
+}
+input[type="checkbox"] {
+	-webkit-transition:  none;
+	-o-transition: none;
+	-moz-transition: none;
+}
+
+body {
+	background: #222222;
+	padding: 20px 50px;
+	margin: 0;
+	height:100%;
+}
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus {
+    outline: 0;
+    -webkit-appearance:none;
+    -o-appearance: none;
+    -moz-appearance: none;
+-moz-box-shadow: none;
+-o-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+        }
+input[type="checkbox"]:hover {
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	-o-appearance:checkbox;
+}
+.error {
+	border-color: #e9322d;
+	-webkit-box-shadow: 0 0 6px #f8b9b7;
+	-moz-box-shadow: 0 0 6px #f8b9b7;
+	box-shadow: 0 0 6px #f8b9b7;
+}

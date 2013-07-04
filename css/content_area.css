@@ -1,0 +1,44 @@
+textarea {
+				float: left;
+				background: transparent;
+				border: 0px;
+				color: #fff;
+				padding: 0px;
+				width:  -webkit-calc(100% - 253px);
+				width: -moz-calc(100% - 253px);
+				height: -webkit-calc(100% - 6px);
+				height: -moz-calc(100% - 6px);
+				font-family: monospace;
+				outline: none;
+				outline-color: transparent;
+				resize: none;
+				position: absolute;
+				top: 3px;
+				left: 250px;
+				font-size: 13px;
+			}
+			#linenosblock {
+				position: absolute;
+				top: 3px;
+				left: 200px;
+				width: 40px;
+				height: -webkit-calc(100% - 6px);
+				height: -moz-calc(100% - 6px);
+				font-family: monospace;
+				font-size: 13px;
+				z-index: -1000;
+				text-align: right;
+				overflow-y: hidden;
+			}
+			.linenos {
+				color: #7d7d7d;
+			}
+			.linenos.error {
+				color: red;
+			}
+			.linenos .current {
+				color: white;
+			}
+			.linenos .current.error {
+				color: red;
+			}

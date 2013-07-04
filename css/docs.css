@@ -1,0 +1,54 @@
+#docs {
+	position: absolute;
+	left: -webkit-calc(-100% + 500px);
+	left: -moz-calc(-100% + 500px);
+	top: 20px;
+	float: left;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: -webkit-calc(100% - 200px - 100px);
+	width: -moz-calc(100% - 200px - 100px);
+	height: -webkit-calc(100% - 40px);
+	height: -moz-calc(100% - 40px);
+	overflow-y: scroll;
+	background-color: white;
+	background: url('images/docs_background.png');
+	border-right: 1px solid #2a2e31;
+	border-top: 1px solid #2a2e31;
+	border-bottom: 1px solid #2a2e31;
+	z-index: 3;
+
+}
+#docs-container {
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 9pt;
+}
+.docs-code {
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 9pt;
+	font-family: 'Courier New';
+}
+
+.green {
+	color: green;
+}
+.blue {
+	color: blue;
+}
+.gray {
+	color: gray;
+} 
+.red {
+	color: red;
+}
+.purple {
+	color: purple;
+}

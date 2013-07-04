@@ -1,0 +1,48 @@
+FIles Table
+	- ID INT(5) PK AI NN
+	- User ID INT(5) FK -> Users Table ID
+	- Project ID INT(5) FK -> Project Table ID
+	- Content Longtext
+	- Name Varchar(32) Default 'unnamed'
+	- Timestamp timestamp
+
+	ENGINE = InnoDB 
+Project Table
+	- ID Int(5) PK AI NN
+	- User ID INT(5) FK -> Users Table ID
+	- Name Varchar(32) Default 'unnamed'
+
+	ENGINE = InnoDB
+File Backup Table
+	- ID INT(5) PK AI NN
+	- User ID INT(5) FK -> Users Table ID
+	- File ID Int(5) FK -> FIles Table ID
+	- Content Longtext
+	- Timestamp
+	ENGINE = Archive
+Temporary File Table
+	- ID INT(5) PK AI NN
+	- User ID INT(5) FK -> Users Table ID
+	- Content Longtext
+	- FIle ID Int(5) 
+	- TImestamp
+	ENGINE = Memory
+Users table
+	- ID INT(5) PK AI NN
+	- Username Varchar(20)
+	- Password (see encryption method)
+	- Type Int(1)
+	
+	ENGINE = InnoDB
+Sessions Table
+	- ID Int(5)
+	- User ID
+
+	ENGINE = InnoDB
+Languages Table
+	- ID INT(5) PK AI NN
+	- Language Name Varchar(10) Unique
+	- Language Extension Varchar(5) Unique
+	- Access_Level Int(1) Default '1' // Whether it is testing or not.
+
+	ENGINE = InnoDB
